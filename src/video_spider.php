@@ -719,7 +719,7 @@ class Video {
         $post_data = "{\"pid\":" . $id . ",\"type\":\"post\",\"mid\":null}";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "http://share.ippzone.com/ppapi/share/fetch_content");
-        curl_setopt($ch, CURLOPT_REFERER, "http://share.ippzone.com/ppapi/share/fetch_content");
+        curl_setopt($ch, CURLOPT_REFERER, "https://h5.pipigx.com/pp/post/" . $id);
         curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_ENCODING, 'gzip,deflate');
